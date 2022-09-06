@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!-- link of inter font family  -->
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <!-- h${heading $}*3 -->
+    <!-- typography -->
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <!-- links -->
+    <a href="" class="link-arrow">learn more</a><hr> 
+
+    <!-- Badges -->
+    <span class="badge badge--primary">10% OFF</span>
+    <span class="badge badge--secondary">10% OFF</span>
+    <span class="badge badge--primary badge--small">10% OFF</span>
+
+    <!-- Lists : Inline list or vertical list -->
+    <!-- inline list -->
+    <ul class="list list--inline">
+        <li class="list__item">Item 1</li>
+        <li class="list__item">Item 2</li>
+        <li class="list__item">Item 3</li>
+    </ul>
+    <!-- Tick list -->
+    <ul class="list list--tick">
+        <li class="list__item">Item 1</li>
+        <li class="list__item">Item 2</li>
+        <li class="list__item">Item 3</li>
+    </ul>
+
+    <!-- icons -->
+    <!-- first select all svg file and compress it all in sprite by  svgsprit.es.com -->
+    <span class="icon-container">
+        <svg class="icon icon--primary">
+            <use xlink:href="images/sprite.svg#wordpress"></use>
+        </svg>
+    </span>
+    <br>
+    <!-- Buttons -->
+    <button class="btn">
+        Button
+    </button>
+    <button class="btn btn--primary">
+        Primary
+    </button>
+    <button class="btn btn--secondary">
+        secondary
+    </button>
+    <button class="btn btn--accent">
+        Accent
+    </button>
+    <button class="btn btn--outline">
+        Outline
+    </button>
+    <br><br>
+    
+    <!-- Inputs -->
+    <input type="text" class="input" placeholder="Enter Domain Name Here.."><br><br>
+    <!-- Input Groups -->
+    <div class="input-group">
+        <input type="text" class="input" placeholder="Enter Domain Name Here..">
+        <button class="btn btn--accent">
+            Search
+        </button>
+    </div><br>
+
+    <!-- Cards -->
+    <div style="width: 20%; padding:4rem;">
+        <div class="card card--primary">
+            <header class="card__header">
+                Card Title
+            </header>
+            <div class="card__body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+        </div>
+    </div>
+
+    <!-- Plan -->
+    <div class="plan plan--popular" style="width: 23%; padding:4rem;">
+        <div class="card card--secondary">
+          <header class="card__header">
+            <h3 class="plan__name">Entry</h3>
+            <span class="plan__price">$14</span>
+            <span class="plan__billing-cycle">/month</span>
+            <span class="badge badge--secondary badge--small">10% OFF</span>
+            <span class="plan__description">East start on the cloud</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Unlimited Websites</li>
+              <li class="list__item">Unlimited Bandwidth</li>
+              <li class="list__item">100 GB SSD Sotrage</li>
+              <li class="list__item">3 GB RAM</li>
+            </ul>
+            <button class="btn btn--outline btn--block">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Media Objects -->
+      <div class="media">
+        <div class="media__image">
+            <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#snap"></use>
+            </svg>
+        </div>
+        <div class="media__body">
+            <h3 class="media__title">Easy Sart & Managed Updates</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae deleniti 
+                temporibus illum explicabo modi unde fuga aperiam corrupti facilis eaque.</p>
+        </div>
+      </div>
+
+      <!-- Quotes -->
+      <blockquote class="quote">
+        <p class="quote__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores enim cupiditate illum veniam porro, vero nam earum fugit repellat!</p>
+        <footer>
+            <div class="media">
+                <div class="media__image">
+                    <svg class="icon icon--primary quote__line">
+                        <use xlink:href="images/sprite.svg#line"></use>
+                    </svg>
+                </div>
+                <div class="media__body">
+                    <h3 class="media__title quote__author">Zeeshan Malik</h3>
+                    <p class="qoute__organization">ABC Company</p>
+                </div>
+              </div>
+        </footer>
+      </blockquote>
+     
+      <!-- Grids -->
+      <div class="grid grid--cols-2">
+        <div style="background: gold; height:100px;"></div>
+        <div style="background: blue; height:100px"></div>
+      </div><hr>
+      <div class="grid grid--cols-3">
+        <div style="background: gold; height:100px;"></div>
+        <div style="background: blue; height:100px"></div>
+        <div style="background: red; height:100px"></div>
+      </div><br>
+
+      <!-- Testimonials -->
+      <div class="card testimonial">
+        <div class="grid grid--cols-2">
+            <div class="testimonial__image">
+                <img src="images/testimonial.jpg" alt="A happy , Smiling Customer">
+                <span class="icon-container icon-container--accent">
+                    <svg class="icon icon--white icon--small">
+                        <use xlink:href="images/sprite.svg#quotes"></use>
+                    </svg>
+                </span>
+            </div>
+            <blockquote class="quote">
+                <p class="quote__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores enim cupiditate illum veniam porro, vero nam earum fugit repellat!</p>
+                <footer>
+                    <div class="media">
+                        <div class="media__image">
+                            <svg class="icon icon--primary quote__line">
+                                <use xlink:href="images/sprite.svg#line"></use>
+                            </svg>
+                        </div>
+                        <div class="media__body">
+                            <h3 class="media__title quote__author">Zeeshan Malik</h3>
+                            <p class="qoute__organization">ABC Company</p>
+                        </div>
+                      </div>
+                </footer>
+              </blockquote>
+        </div>
+      </div>
+
+      <!-- Callout -->
+      <div class="callout callout--primary">
+        <div class="grid grid--cols-2">
+            <div class="callout__content">
+                <h2 class="callout__heading">Ready to Get Startted?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet impedit ea recusandae laboriosam veritatis odit eaque cum ullam voluptatibus esse?</p>
+            </div>
+            <a href="" class="btn btn--secondary btn--streched">Get Started</a>
+        </div>
+      </div>
+
+      <!-- Collapsibles -->
+      <div class="collapsible collapsible--expanded">
+        <header class="collapsible__header">
+            <h2 class="collapsible__heading">Item 1</h2>
+                <img src="images/chevron.svg" alt="" 
+                    class="icon icon--white collapsible__chevron">
+                </img>
+        </header>
+        <div class="collapsible__content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, placeat.
+        </div>
+      </div>
+      
+
+      <!-- Blocks -->
+      <section class="block block--dark block--skewed-left">
+        <header class="block__header">
+          <h2 class="block__heading">Heading</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            laboriosam.
+          </p>
+        </header>
+      </section>
+
+      <!-- Navigation Bar -->
+      <nav class="nav collapsible">
+        <a class="nav__logo" href="/"><img src="images/logo.svg" alt=""></a>
+        <svg class="icon icon--white nav__toggler">
+            <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+            <li class="nav__item"><a href="">Hosting</a></li>
+            <li class="nav__item"><a href="">VPS</a></li>
+            <li class="nav__item"><a href="">Domain</a></li>
+            <li class="nav__item"><a href="">Pricing</a></li>
+        </ul>
+      </nav>
+      
+    <script src="js/main.js"></script>
+</body>
+</html>
