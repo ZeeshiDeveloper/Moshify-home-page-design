@@ -1,252 +1,55 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- meta type for SEO -->
+    <meta name="description" content="Deploy your websites in less then 60 seconds. Developer name is Zeeshan Malik">
+    <!-- open graph protocol(ogp.me): when you share your website you see preview of website -->
+    <meta property="og:title" content="Moshify - Copy Design by Zeeshan Malik">
+    <meta property="og:description" content="Moshify - Copy Design by Zeeshan Malik. Using HTML and CSS">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http:\\">
+    <meta property="og:url" content="http:\\">
+    <title>Zeeshan - Go Online for Just $9</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <!-- link of inter font family  -->
     <link rel="stylesheet" href="Css/normalize.css">
     <link rel="stylesheet" href="Css/style.css">
+    <!-- this link is for animation copy from AOS Animation github code -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
-    <!-- h${heading $}*3 -->
-    <!-- typography -->
-    <h1>heading 1</h1>
-    <h2>heading 2</h2>
-    <h3>heading 3</h3>
-    <p>Lorem ipsum dolor sit amet.</p>
-
-    <!-- links -->
-    <a href="" class="link-arrow">learn more</a><hr> 
-
-    <!-- Badges -->
-    <span class="badge badge--primary">10% OFF</span>
-    <span class="badge badge--secondary">10% OFF</span>
-    <span class="badge badge--primary badge--small">10% OFF</span>
-
-    <!-- Lists : Inline list or vertical list -->
-    <!-- inline list -->
-    <ul class="list list--inline">
-        <li class="list__item">Item 1</li>
-        <li class="list__item">Item 2</li>
-        <li class="list__item">Item 3</li>
-    </ul>
-    <!-- Tick list -->
-    <ul class="list list--tick">
-        <li class="list__item">Item 1</li>
-        <li class="list__item">Item 2</li>
-        <li class="list__item">Item 3</li>
-    </ul>
-
-    <!-- icons -->
-    <!-- first select all svg file and compress it all in sprite by  svgsprit.es.com -->
-    <span class="icon-container">
-        <svg class="icon icon--primary">
-            <use xlink:href="images/sprite.svg#wordpress"></use>
-        </svg>
-    </span>
-    <br>
-    <!-- Buttons -->
-    <button class="btn">
-        Button
-    </button>
-    <button class="btn btn--primary">
-        Primary
-    </button>
-    <button class="btn btn--secondary">
-        secondary
-    </button>
-    <button class="btn btn--accent">
-        Accent
-    </button>
-    <button class="btn btn--outline">
-        Outline
-    </button>
-    <br><br>
-    
-    <!-- Inputs -->
-    <input type="text" class="input" placeholder="Enter Domain Name Here.."><br><br>
-    <!-- Input Groups -->
-    <div class="input-group">
-        <input type="text" class="input" placeholder="Enter Domain Name Here..">
-        <button class="btn btn--accent">
-            Search
-        </button>
-    </div><br>
-
-    <!-- Cards -->
-    <div style="width: 20%; padding:4rem;">
-        <div class="card card--primary">
-            <header class="card__header">
-                Card Title
-            </header>
-            <div class="card__body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-        </div>
-    </div>
-
-    <!-- Plan -->
-    <div class="plan plan--popular">
-        <div class="card card--secondary">
-          <header class="card__header">
-            <h3 class="plan__name">Entry</h3>
-            <span class="plan__price">$14</span>
-            <span class="plan__billing-cycle">/month</span>
-            <span class="badge badge--secondary badge--small">10% OFF</span>
-            <span class="plan__description">East start on the cloud</span>
-          </header>
-          <div class="card__body">
-            <ul class="list list--tick">
-              <li class="list__item">Unlimited Websites</li>
-              <li class="list__item">Unlimited Bandwidth</li>
-              <li class="list__item">100 GB SSD Sotrage</li>
-              <li class="list__item">3 GB RAM</li>
-            </ul>
-            <button class="btn btn--outline btn--block">Buy Now</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Media Objects -->
-      <div class="media">
-        <div class="media__image">
-            <svg class="icon icon--primary">
-                <use xlink:href="images/sprite.svg#snap"></use>
+    <header>
+        <!-- Nevigation Bar -->
+        <nav class="nav collapsible">
+            <a class="nav__logo" href="/"><img src="images/logo.svg" alt=""></a>
+            <svg class="icon icon--white nav__toggler">
+                <use href="images/sprite.svg#menu"></use>
             </svg>
-        </div>
-        <div class="media__body">
-            <h3 class="media__title">Easy Sart & Managed Updates</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae deleniti 
-                temporibus illum explicabo modi unde fuga aperiam corrupti facilis eaque.</p>
-        </div>
-      </div>
+            <ul class="list nav__list collapsible__content">
+                <li class="nav__item"><a href="">Hosting</a></li>
+                <li class="nav__item"><a href="">VPS</a></li>
+                <li class="nav__item"><a href="">Domain</a></li>
+                <li class="nav__item"><a href="">Pricing</a></li>
+            </ul>
+          </nav>
+    </header>
 
-      <!-- Quotes -->
-      <blockquote class="quote">
-        <p class="quote__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores enim cupiditate illum veniam porro, vero nam earum fugit repellat!</p>
-        <footer>
-            <div class="media">
-                <div class="media__image">
-                    <svg class="icon icon--primary quote__line">
-                        <use xlink:href="images/sprite.svg#line"></use>
-                    </svg>
-                </div>
-                <div class="media__body">
-                    <h3 class="media__title quote__author">Zeeshan Malik</h3>
-                    <p class="qoute__organization">ABC Company</p>
-                </div>
-              </div>
-        </footer>
-      </blockquote>
-     
-      <!-- Grids -->
-      <div class="grid grid--cols-2">
-        <div style="background: gold; height:100px;"></div>
-        <div style="background: blue; height:100px"></div>
-      </div><hr>
-      <div class="grid grid--cols-3">
-        <div style="background: gold; height:100px;"></div>
-        <div style="background: blue; height:100px"></div>
-        <div style="background: red; height:100px"></div>
-      </div><br>
-
-      <!-- Testimonials -->
-      <div class="card testimonial">
-        <div class="grid grid--cols-2">
-            <div class="testimonial__image">
-                <img src="images/testimonial.jpg" alt="A happy , Smiling Customer">
-                <span class="icon-container icon-container--accent">
-                    <svg class="icon icon--white icon--small">
-                        <use xlink:href="images/sprite.svg#quotes"></use>
-                    </svg>
-                </span>
-            </div>
-            <blockquote class="quote">
-                <p class="quote__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores enim cupiditate illum veniam porro, vero nam earum fugit repellat!</p>
-                <footer>
-                    <div class="media">
-                        <div class="media__image">
-                            <svg class="icon icon--primary quote__line">
-                                <use xlink:href="images/sprite.svg#line"></use>
-                            </svg>
-                        </div>
-                        <div class="media__body">
-                            <h3 class="media__title quote__author">Zeeshan Malik</h3>
-                            <p class="qoute__organization">ABC Company</p>
-                        </div>
-                      </div>
-                </footer>
-              </blockquote>
-        </div>
-      </div>
-
-      <!-- Callout -->
-      <div class="callout callout--primary">
-        <div class="grid grid--cols-2">
-            <div class="callout__content">
-                <h2 class="callout__heading">Ready to Get Startted?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet impedit ea recusandae laboriosam veritatis odit eaque cum ullam voluptatibus esse?</p>
-            </div>
-            <a href="" class="btn btn--secondary btn--streched">Get Started</a>
-        </div>
-      </div>
-
-      <!-- Collapsibles -->
-      <div class="collapsible collapsible--expanded">
-        <header class="collapsible__header">
-            <h2 class="collapsible__heading">Item 1</h2>
-                <img src="images/chevron.svg" alt="" 
-                    class="icon icon--white collapsible__chevron">
-                </img>
-        </header>
-        <div class="collapsible__content">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, placeat.
-        </div>
-      </div>
-      
-
-      <!-- Blocks -->
-      <section class="block block--dark block--skewed-left">
-        <header class="block__header">
-          <h2 class="block__heading">Heading</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-            laboriosam.
-          </p>
-        </header>
-      </section>
-
-      <!-- Navigation Bar -->
-      <nav class="nav collapsible">
-        <a class="nav__logo" href="/"><img src="images/logo.svg" alt=""></a>
-        <svg class="icon icon--white nav__toggler">
-            <use xlink:href="images/sprite.svg#menu"></use>
-        </svg>
-        <ul class="list nav__list collapsible__content">
-            <li class="nav__item"><a href="">Hosting</a></li>
-            <li class="nav__item"><a href="">VPS</a></li>
-            <li class="nav__item"><a href="">Domain</a></li>
-            <li class="nav__item"><a href="">Pricing</a></li>
-        </ul>
-      </nav>
-    
-
-    <!-- Hero -->
-    <section class="block block--dark block--skewed-left hero">
+     <!-- Hero -->
+     <section class="block block--dark block--skewed-left hero">
         <div class="container grid grid--cols-2">
-            <header class="block__header hero__content">
+            <header class="block__header hero__content" data-aos="fade-right">
                 <h1 class="block__heading">Cloud Hosting for Pros</h1>
                 <p class="hero__tagline">Deploy your websites in less then 60 seconds</p>
                 <a href="" class="btn btn--accent btn--streched">GET STARTED</a>
             </header>
             <!-- Optimizing image of hero -->
-            <picture>
+            <picture data-aos="zoom-in">
                 <source type="image/webp"
                     srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
                 >
@@ -259,14 +62,14 @@
     </section>
 
     <!-- Domain Block -->
-    <section class="block container block-domain">
+    <section class="block container block-domain" data-aos="fade-up">
         <h2>Starting at $10 per month</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, exercitationem?</p>
         <div class="input-group">
             <input type="text" class="input" placeholder="Enter Domain Name Here..">
             <button class="btn btn--accent">
                 <svg class="icon icon--white">
-                    <use xlink:href="images/sprite.svg#search"></use>
+                    <use href="images/sprite.svg#search"></use>
                 </svg>
                 Search
             </button>
@@ -282,7 +85,7 @@
     </section>
 
     <!-- Plans Block -->
-    <section class="block container block-plans">
+    <section class="block container block-plans" data-aos="fade-up">
         <div class="grid grid--cols-3">
             <div class="plan">
                 <div class="card card--secondary">
@@ -349,7 +152,6 @@
         </div>
     </section>
 
-    <!-- ///////////////// -->
     <!-- Feature Block -->
     <section class="block container">
         <header class="block__header">
@@ -357,31 +159,32 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, voluptatem.</p>
         </header>
         <article class="grid grid--cols-2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="zoom-in-up">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
-                        <use xlink:href="images/sprite.svg#easy"></use>
+                        <use href="images/sprite.svg#easy"></use>
                     </svg>
                 </span>
                 <h3 class="feature__heading">Super Easy to Use</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, non enim! Similique, cupiditate temporibus. Doloremque ea mollitia dolores excepturi magni.</p>
                 <a href="" class="link-arrow">learn more</a>
             </div>
-            <picture>
+            <picture data-aos="zoom-in-up">
                 <source type="image/webp"
                         srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
                     >
                     <source type="image/jpg"
                         srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x"
                     >
-                <img class="feature__image" src="images/easy.jpg" alt=""></picture>
+                <img class="feature__image" src="images/easy.jpg" alt="">
+            </picture>
         </article>
 
         <article class="grid grid--cols-2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-up">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
-                        <use xlink:href="images/sprite.svg#computer"></use>
+                        <use href="images/sprite.svg#computer"></use>
                     </svg>
                 </span>
                 <h3 class="feature__heading">Simply Fast Websites</h3>
@@ -399,10 +202,10 @@
         </article>
 
         <article class="grid grid--cols-2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-up">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
-                        <use xlink:href="images/sprite.svg#wordpress"></use>
+                        <use href="images/sprite.svg#wordpress"></use>
                     </svg>
                 </span>
                 <h3 class="feature__heading">Wordpress Made Easy</h3>
@@ -419,6 +222,28 @@
                 <img class="feature__image" src="images/wordpress.jpg" alt="">
             </picture>
         </article>
+
+        <article class="grid grid--cols-2 feature">
+            <div class="feature__content" data-aos="fade-up">
+                <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <use href="images/sprite.svg#clock"></use>
+                    </svg>
+                </span>
+                <h3 class="feature__heading">24/7 Expert Support</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, non enim! Similique, cupiditate temporibus. Doloremque ea mollitia dolores excepturi magni.</p>
+                <a href="" class="link-arrow">learn more</a>
+            </div>
+            <picture data-aos="zoom-in-up">
+                <source type="image/webp"
+                        srcset="images/support.webp 1x, images/support@2x.webp 2x"
+                    >
+                    <source type="image/jpg"
+                        srcset="images/support.jpg 1x, images/support@2x.jpg 2x"
+                    >
+                <img class="feature__image" src="images/support.jpg" alt="">
+            </picture>
+        </article>
     </section>
 
     <!-- Showcase Block -->
@@ -427,7 +252,7 @@
             <h2>User-friendly Control Panel</h2>
         </header>
         <div class="container grid grid--cols-2">
-            <picture class="block-showcase__image">
+            <picture class="block-showcase__image" data-aos="fade-right">
                 <source type="image/webp"
                         srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
                     >
@@ -437,12 +262,12 @@
                 <img class="showcase__image" src="images/ipad.png" alt="">
             </picture>
             <!-- media object -->
-            <ul class="list showcase-block__list">
+            <ul class="list showcase-block__list" data-aos="fade-up">
                 <li>
                     <div class="media">
                             <div class="media__image">
                                 <svg class="icon icon--primary">
-                                    <use xlink:href="images/sprite.svg#easy"></use>
+                                    <use href="images/sprite.svg#easy"></use>
                                 </svg>
                             </div>
                             <div class="media__body">
@@ -456,7 +281,7 @@
                     <div class="media">
                         <div class="media__image">
                             <svg class="icon icon--primary">
-                                <use xlink:href="images/sprite.svg#growth"></use>
+                                <use href="images/sprite.svg#growth"></use>
                             </svg>
                         </div>
                         <div class="media__body">
@@ -470,7 +295,7 @@
                     <div class="media">
                         <div class="media__image">
                             <svg class="icon icon--primary">
-                                <use xlink:href="images/sprite.svg#wordpress"></use>
+                                <use href="images/sprite.svg#wordpress"></use>
                             </svg>
                         </div>
                         <div class="media__body">
@@ -485,7 +310,7 @@
     </section>
 
     <!-- Testimonials Block -->
-    <section class="block testimonial-block">
+    <section class="block testimonial-block" data-aos="zoom-in">
         <header class="block__header">
             <h2>What Our Customers are Saying</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, veritatis.</p>
@@ -498,7 +323,7 @@
                         <img src="images/testimonial.jpg" alt="A happy , Smiling Customer">
                         <span class="icon-container icon-container--accent">
                             <svg class="icon icon--white icon--small">
-                                <use xlink:href="images/sprite.svg#quotes"></use>
+                                <use href="images/sprite.svg#quotes"></use>
                             </svg>
                         </span>
                     </div>
@@ -508,7 +333,7 @@
                             <div class="media">
                                 <div class="media__image">
                                     <svg class="icon icon--primary quote__line">
-                                        <use xlink:href="images/sprite.svg#line"></use>
+                                        <use href="images/sprite.svg#line"></use>
                                     </svg>
                                 </div>
                                 <div class="media__body">
@@ -523,17 +348,28 @@
         </div>
     </section>
 
+    <!-- Callout -->
+      <div class="callout callout--primary">
+        <div class="grid grid--cols-2">
+            <div class="callout__content">
+                <h2 class="callout__heading">Ready to Get Startted?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet impedit ea recusandae laboriosam veritatis odit eaque cum ullam voluptatibus esse?</p>
+            </div>
+            <a href="" class="btn btn--secondary btn--streched">Get Started</a>
+        </div>
+      </div>
+
+
     <!-- Footer Block-->
     <footer class="block block--dark block-footer">
         <!-- Collapssibles -->
         <div class="container grid footer__sections">
             <section class="collapsible collapsible--expanded footer__section">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading">Products</h2>
                         <img src="images/chevron.svg" alt="" 
-                            class="icon icon--white collapsible__chevron">
-                        </img>
-                </header>
+                            class="icon icon--white collapsible__chevron"/>
+                </div>
                 <div class="collapsible__content">
                     <ul class="list">
                         <li><a href="">Website Hosting</a></li>
@@ -544,12 +380,10 @@
             </section>
             
             <section class="collapsible footer__section">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading">Company</h2>
-                        <img class="icon icon--white collapsible__chevron" src="images/chevron.svg" alt="" 
-                            >
-                        </img>
-                </header>
+                        <img class="icon icon--white collapsible__chevron" src="images/chevron.svg" alt="" />
+                </div>
                 <div class="collapsible__content">
                     <ul class="list">
                         <li><a href="">About</a></li>
@@ -559,12 +393,11 @@
                 </div>
             </section>
             <section class="collapsible footer__section">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading">Support</h2>
                         <img src="images/chevron.svg" alt="" 
-                            class="icon icon--white collapsible__chevron">
-                        </img>
-                </header>
+                            class="icon icon--white collapsible__chevron"/>
+                </div>
                 <div class="collapsible__content">
                     <ul class="list">
                         <li><a href="">Contact</a></li>
@@ -574,12 +407,11 @@
                 </div>
             </section>
             <section class="collapsible footer__section">
-                <header class="collapsible__header">
+                <div class="collapsible__header">
                     <h2 class="collapsible__heading footer__heading">Domain</h2>
                         <img src="images/chevron.svg" alt="" 
-                            class="icon icon--white collapsible__chevron">
-                        </img>
-                </header>
+                            class="icon icon--white collapsible__chevron"/>
+                </div>
                 <div class="collapsible__content">
                     <ul class="list">
                         <li><a href="">Domain Checker</a></li>
@@ -588,16 +420,33 @@
                     </ul>
                 </div>
             </section>
-            <section class="footer__brand">
+            <div class="footer__brand">
                 <img src="images/logo.svg" alt="">
                 <p class="footer__copyright">
                     Copyright 2022 Mosh Hamedani
                 </p>
-            </section>
-
+            </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <!-- this script copy from AOS Animation. you jusst write data-aos and name of animation
+    under the container,div,img or any other element which you want  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
+
+<!-- Check HMTL and CSS Validation checker after completed the code  -->
+
+<!-- After Check Build Our Project using Parcel
+First you have to install node.js in your machine 
+check vervion by enter (node -v) inside terminal
+write (npm init -y) to initiate npm
+next to install parcel type (npm i -D parcel-bundler)
+(npm i -g parcel-bundler) this makes your parcel global
+(parcel index.hmtl) runyour code
+node_modules,dist and .cache move to gitignore
+(parcel build index.html) build production-->
