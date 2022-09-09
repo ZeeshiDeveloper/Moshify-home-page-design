@@ -778,6 +778,7 @@ a{
 /* Footer */
 .block-footer{
     background: #232323;
+    padding: 10rem 2rem;
 }
 .footer__section{
     padding: 2rem;
@@ -821,7 +822,6 @@ a{
         display: none;
     }
     .block-footer .collapsible__content{
-        /* display: block; */
         opacity: 1;
         max-height: 100%;
     }
@@ -843,11 +843,6 @@ a{
     .footer__sections{
         margin: 0 auto -4rem;
         position: relative;
-        max-width: 90rem;
-    }
-}
-@media screen and (max-width:1024px) {
-    .footer__brand{
-        
+        max-width: 114rem;
     }
 }
