@@ -294,9 +294,6 @@ a{
 .plan{
     transition: transform .2s ease-out;
 }
-.plan--popular{
-    transform: scale(1.1);
-}
 .plan--popular .card{
     max-width: 500px;
     margin: 0 auto;
@@ -363,6 +360,7 @@ a{
       font-size: 1.7rem;
     }
 }
+
 
   /* Media Object */
 .media{
@@ -693,6 +691,9 @@ a{
         max-width: 110rem;
         margin: 0 auto;
 }
+    .plan--popular {
+        transform: scale(1.1);
+    }
     
 }
 
@@ -774,7 +775,7 @@ a{
     }
     .quote__author, 
     .qoute__organization{
-        font-size: 7px;
+        font-size: 11px;
     }
 }
 
@@ -847,5 +848,10 @@ a{
         margin: 0 auto -4rem;
         position: relative;
         max-width: 90rem;
+    }
+}
+@media screen and (max-width:1024px) {
+    .footer__brand{
+        
     }
 }
