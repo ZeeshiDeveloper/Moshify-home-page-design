@@ -467,6 +467,9 @@ a{
 .callout{
     padding: 4rem;
     border-radius: 5px;
+    margin: 0 auto -4rem;
+    position: relative;
+    max-width: 106rem;
 }
 .callout--primary{
     background: var(--color-primary);
@@ -494,13 +497,6 @@ a{
     .callout .btn{
         justify-self: start;
         margin: 0 2rem;
-    }
-}
-@media screen and (min-width:1024px) {
-    .callout{
-        margin: 0 auto -4rem;
-        position: relative;
-        max-width: 106rem;
     }
 }
 
